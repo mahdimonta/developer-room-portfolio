@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Mahdi Montazeri Portfolio</title>
+  <meta name="description" content="Mahdi Montazeri Portfolio — an interactive isometric pixel-art developer room portfolio." />
+  <meta name="color-scheme" content="dark" />
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="app" role="application" aria-label="Mahdi Montazeri Portfolio">
+    <canvas id="room-canvas" aria-hidden="true"></canvas>
+
+    <header class="hud" aria-hidden="false">
+      <div class="hud-brand">
+        <span class="hud-dot"></span>
+        <span class="hud-title">MAHDI MONTAZERI PORTFOLIO</span>
+      </div>
+      <p class="hud-tagline">Welcome to my workspace.</p>
+    </header>
+
+    <nav class="quick-nav" aria-label="Quick navigation">
+      <button type="button" data-open="about">About</button>
+      <button type="button" data-open="projects">Projects</button>
+      <button type="button" data-open="contact">Contact</button>
+    </nav>
+
+    <div id="loading" class="loading" role="status" aria-live="polite">
+      <div class="loading-box">
+        <div class="loading-glyph">&lt;/&gt;</div>
+        <p class="loading-text">booting room<span class="dots">...</span></p>
+        <div class="loading-bar"><div class="loading-bar-fill" id="loading-fill"></div></div>
+      </div>
+    </div>
+
+    <div id="guide" class="guide" hidden role="dialog" aria-label="How to explore the room">
+      <div class="guide-card">
+        <h2>Welcome to my workspace.</h2>
+        <p>Three things in the room are interactive — click any of them:</p>
+        <ul class="guide-list">
+          <li><span class="guide-ico">◈</span><div><strong>The character</strong><span>Click to read about me</span></div></li>
+          <li><span class="guide-ico">▤</span><div><strong>The shelf above the desk</strong><span>Click an object to open a project</span></div></li>
+          <li><span class="guide-ico">▣</span><div><strong>The laptop</strong><span>Click for contact info &amp; résumé</span></div></li>
+        </ul>
+        <button type="button" id="guide-dismiss" class="btn btn-primary">Start exploring</button>
+      </div>
+    </div>
+
+    <!-- Panels: real HTML so content stays selectable, accessible and SEO-visible -->
+    <section id="panel-about" class="panel" aria-hidden="true" aria-labelledby="about-title">
+      <div class="panel-card">
+        <button type="button" class="panel-close" data-close aria-label="Close">✕</button>
+        <div class="about-layout">
+          <img class="about-photo" id="about-photo" alt="Portrait of Mahdi Montazeri" />
+          <div class="about-body">
+            <h2 id="about-title"></h2>
+            <p class="about-role"></p>
+            <p class="about-bio"></p>
+            <dl class="about-facts"></dl>
+            <h3>Skills</h3>
+            <div class="skills-grid" id="skills-grid"></div>
+            <h3>Achievements</h3>
+            <div class="achievements" id="achievements-list"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="panel-projects" class="panel" aria-hidden="true" aria-labelledby="projects-title">
+      <div class="panel-card">
+        <button type="button" class="panel-close" data-close aria-label="Close">✕</button>
+        <h2 id="projects-title">Projects</h2>
+        <div class="project-detail" id="project-detail"></div>
+      </div>
+    </section>
+
+    <section id="panel-contact" class="panel" aria-hidden="true" aria-labelledby="contact-title">
+      <div class="panel-card">
+        <button type="button" class="panel-close" data-close aria-label="Close">✕</button>
+        <h2 id="contact-title">Contact & Résumé</h2>
+        <div class="contact-body" id="contact-body"></div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <span id="footer-name"></span>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,595 @@
+{
+ "meta": {
+  "canvas": {
+   "w": 824,
+   "h": 712
+  },
+  "origin": {
+   "x": 412,
+   "y": 268
+  },
+  "tile": {
+   "w": 64,
+   "h": 32,
+   "z": 32
+  }
+ },
+ "sprites": {
+  "desk": {
+   "src": "assets/furniture/desk.png",
+   "x": 401,
+   "y": 263,
+   "w": 228,
+   "h": 146,
+   "sort": 22,
+   "note": "main computer desk"
+  },
+  "drawers": {
+   "src": "assets/furniture/drawers.png",
+   "x": 538,
+   "y": 337,
+   "w": 78,
+   "h": 69,
+   "sort": 21,
+   "note": "desk drawer unit"
+  },
+  "chair-back": {
+   "src": "assets/furniture/chair-back.png",
+   "x": 415,
+   "y": 306,
+   "w": 36,
+   "h": 58,
+   "sort": 26,
+   "note": "chair backrest \u2014 draws behind the character"
+  },
+  "chair-front": {
+   "src": "assets/furniture/chair-front.png",
+   "x": 416,
+   "y": 332,
+   "w": 60,
+   "h": 49,
+   "sort": 28,
+   "note": "chair seat, base and armrests \u2014 sorted behind character so boy sits cleanly on top"
+  },
+  "project-shelf": {
+   "src": "assets/furniture/project-shelf.png",
+   "x": 448,
+   "y": 190,
+   "w": 179,
+   "h": 95,
+   "sort": 10,
+   "note": "shelf board for projects"
+  },
+  "upper-shelf": {
+   "src": "assets/furniture/upper-shelf.png",
+   "x": 464,
+   "y": 146,
+   "w": 152,
+   "h": 81,
+   "sort": 9,
+   "note": "upper decorative shelf"
+  },
+  "bookshelf": {
+   "src": "assets/furniture/bookshelf.png",
+   "x": 143,
+   "y": 244,
+   "w": 126,
+   "h": 179,
+   "sort": 14,
+   "note": "bookshelf with books"
+  },
+  "monitor-main": {
+   "src": "assets/computer/monitor-main.png",
+   "x": 477,
+   "y": 239,
+   "w": 79,
+   "h": 89,
+   "sort": 24,
+   "note": "monitor frame; its screen is a separate live layer"
+  },
+  "monitor-side": {
+   "src": "assets/computer/monitor-side.png",
+   "x": 551,
+   "y": 289,
+   "w": 55,
+   "h": 72,
+   "sort": 24,
+   "note": "monitor frame; its screen is a separate live layer"
+  },
+  "pc-tower": {
+   "src": "assets/computer/pc-tower.png",
+   "x": 428,
+   "y": 281,
+   "w": 53,
+   "h": 56,
+   "sort": 19,
+   "note": "desktop tower under the desk"
+  },
+  "keyboard": {
+   "src": "assets/computer/keyboard.png",
+   "x": 434,
+   "y": 296,
+   "w": 131,
+   "h": 67,
+   "sort": 26,
+   "note": "RGB keyboard and desk pad"
+  },
+  "mouse": {
+   "src": "assets/computer/mouse.png",
+   "x": 523,
+   "y": 339,
+   "w": 24,
+   "h": 15,
+   "sort": 26,
+   "note": "mouse"
+  },
+  "laptop": {
+   "src": "assets/computer/laptop.png",
+   "x": 549,
+   "y": 312,
+   "w": 62,
+   "h": 59,
+   "sort": 25,
+   "hotspot": "contact",
+   "note": "laptop \u2014 contact & resume hotspot"
+  },
+  "window-frame": {
+   "src": "assets/room/window-frame.png",
+   "x": 627,
+   "y": 186,
+   "w": 125,
+   "h": 164,
+   "sort": 2,
+   "note": "window frame on the back wall"
+  },
+  "city-night": {
+   "src": "assets/room/city-night.png",
+   "x": 635,
+   "y": 195,
+   "w": 109,
+   "h": 144,
+   "sort": 3,
+   "note": "sunny daytime city seen through the window"
+  },
+  "cabinet": {
+   "src": "assets/furniture/cabinet.png",
+   "x": 606,
+   "y": 352,
+   "w": 113,
+   "h": 105,
+   "sort": 18,
+   "note": "side cabinet for the coffee corner"
+  },
+  "coffee-machine": {
+   "src": "assets/furniture/coffee-machine.png",
+   "x": 630,
+   "y": 331,
+   "w": 50,
+   "h": 56,
+   "sort": 19,
+   "note": "coffee machine"
+  },
+  "mug-desk": {
+   "src": "assets/furniture/mug-desk.png",
+   "x": 522,
+   "y": 328,
+   "w": 19,
+   "h": 18,
+   "sort": 26,
+   "note": "coffee mug"
+  },
+  "mug-machine": {
+   "src": "assets/furniture/mug-machine.png",
+   "x": 666,
+   "y": 367,
+   "w": 19,
+   "h": 19,
+   "sort": 20,
+   "note": "coffee mug"
+  },
+  "plant-floor": {
+   "src": "assets/furniture/plant-floor.png",
+   "x": 175,
+   "y": 388,
+   "w": 52,
+   "h": 99,
+   "sort": 37,
+   "note": "potted plant"
+  },
+  "pet-bed": {
+   "src": "assets/furniture/pet-bed.png",
+   "x": 318,
+   "y": 429,
+   "w": 74,
+   "h": 37,
+   "sort": 33,
+   "note": "soft pet cushion on the floor for the cat"
+  },
+  "wall-decor-left": {
+   "src": "assets/room/wall-decor-left.png",
+   "x": 137,
+   "y": 53,
+   "w": 270,
+   "h": 204,
+   "sort": 5,
+   "note": "whiteboard, pin board and LED strip on the left wall"
+  },
+  "wall-lamp": {
+   "src": "assets/effects/wall-lamp.png",
+   "x": 119,
+   "y": 107,
+   "w": 110,
+   "h": 110,
+   "sort": 8,
+   "note": "wall lamp with baked glow"
+  },
+  "desk-lamp": {
+   "src": "assets/effects/desk-lamp.png",
+   "x": 395,
+   "y": 206,
+   "w": 162,
+   "h": 162,
+   "sort": 27,
+   "note": "desk lamp with baked glow"
+  },
+  "headphones": {
+   "src": "assets/furniture/headphones.png",
+   "x": 413,
+   "y": 267,
+   "w": 33,
+   "h": 26,
+   "sort": 26,
+   "note": "headphones on the desk"
+  },
+  "proj-store": {
+   "src": "assets/projects/proj-store.png",
+   "x": 460,
+   "y": 185,
+   "w": 35,
+   "h": 32,
+   "sort": 12,
+   "hotspot": "project",
+   "note": "shelf model 'store' (slot 0)"
+  },
+  "proj-phone": {
+   "src": "assets/projects/proj-phone.png",
+   "x": 497,
+   "y": 199,
+   "w": 17,
+   "h": 26,
+   "sort": 13,
+   "hotspot": "project",
+   "note": "shelf model 'phone' (slot 1)"
+  },
+  "proj-robot": {
+   "src": "assets/projects/proj-robot.png",
+   "x": 515,
+   "y": 216,
+   "w": 30,
+   "h": 26,
+   "sort": 14,
+   "hotspot": "project",
+   "note": "shelf model 'robot' (slot 2)"
+  },
+  "proj-tower": {
+   "src": "assets/projects/proj-tower.png",
+   "x": 540,
+   "y": 207,
+   "w": 29,
+   "h": 45,
+   "sort": 15,
+   "hotspot": "project",
+   "note": "shelf model 'tower' (slot 3)"
+  },
+  "proj-dashboard": {
+   "src": "assets/projects/proj-dashboard.png",
+   "x": 572,
+   "y": 239,
+   "w": 16,
+   "h": 28,
+   "sort": 16,
+   "hotspot": "project",
+   "note": "shelf model 'dashboard' (slot 4)"
+  },
+  "proj-apps": {
+   "src": "assets/projects/proj-apps.png",
+   "x": 593,
+   "y": 259,
+   "w": 22,
+   "h": 18,
+   "sort": 17,
+   "hotspot": "project",
+   "note": "shelf model 'apps' (slot 5)"
+  },
+  "shelf-decor": {
+   "src": "assets/furniture/shelf-decor.png",
+   "x": 484,
+   "y": 146,
+   "w": 106,
+   "h": 62,
+   "sort": 11,
+   "note": "trophies and books on the upper shelf"
+  },
+  "rgb-strip": {
+   "src": "assets/effects/rgb-strip.png",
+   "x": 118,
+   "y": 51,
+   "w": 589,
+   "h": 358,
+   "sort": 7,
+   "note": "baked RGB LED strip glow along the floor/wall seams"
+  }
+ },
+ "anims": {
+  "char-idle": {
+   "src": "assets/character/char-idle.png",
+   "x": 420,
+   "y": 289,
+   "fw": 58,
+   "fh": 83,
+   "frames": 12,
+   "fps": 7,
+   "loop": true,
+   "sort": 30,
+   "note": "seated idle, breathing"
+  },
+  "char-typing": {
+   "src": "assets/character/char-typing.png",
+   "x": 420,
+   "y": 290,
+   "fw": 58,
+   "fh": 82,
+   "frames": 8,
+   "fps": 11,
+   "loop": true,
+   "sort": 30,
+   "note": "seated typing"
+  },
+  "char-look": {
+   "src": "assets/character/char-look.png",
+   "x": 419,
+   "y": 290,
+   "fw": 59,
+   "fh": 82,
+   "frames": 14,
+   "fps": 6,
+   "loop": false,
+   "sort": 30,
+   "note": "seated, looking around"
+  },
+  "char-sit": {
+   "src": "assets/character/char-sit.png",
+   "x": 387,
+   "y": 291,
+   "fw": 87,
+   "fh": 106,
+   "frames": 7,
+   "fps": 9,
+   "loop": false,
+   "sort": 30,
+   "note": "sitting down (reverse for standing up)"
+  },
+  "char-walk": {
+   "src": "assets/character/char-walk.png",
+   "x": 383,
+   "y": 284,
+   "fw": 54,
+   "fh": 111,
+   "frames": 8,
+   "fps": 10,
+   "loop": true,
+   "sort": 30,
+   "note": "walk cycle, in place (moved by code)"
+  },
+  "char-coffee": {
+   "src": "assets/character/char-coffee.png",
+   "x": 384,
+   "y": 285,
+   "fw": 66,
+   "fh": 107,
+   "frames": 8,
+   "fps": 6,
+   "loop": false,
+   "sort": 30,
+   "note": "making coffee at the machine"
+  },
+  "cat-idle": {
+   "src": "assets/cat/cat-idle.png",
+   "x": 337,
+   "y": 427,
+   "fw": 44,
+   "fh": 35,
+   "frames": 12,
+   "fps": 6,
+   "loop": true,
+   "sort": 35,
+   "note": "cat idle"
+  },
+  "cat-walk": {
+   "src": "assets/cat/cat-walk.png",
+   "x": 338,
+   "y": 427,
+   "fw": 40,
+   "fh": 35,
+   "frames": 8,
+   "fps": 9,
+   "loop": true,
+   "sort": 35,
+   "note": "cat walk cycle, in place"
+  },
+  "cat-sit": {
+   "src": "assets/cat/cat-sit.png",
+   "x": 337,
+   "y": 419,
+   "fw": 35,
+   "fh": 39,
+   "frames": 10,
+   "fps": 5,
+   "loop": true,
+   "sort": 35,
+   "note": "cat sitting"
+  },
+  "cat-sleep": {
+   "src": "assets/cat/cat-sleep.png",
+   "x": 337,
+   "y": 417,
+   "fw": 34,
+   "fh": 46,
+   "frames": 10,
+   "fps": 4,
+   "loop": true,
+   "sort": 35,
+   "note": "cat sleeping"
+  },
+  "cat-stretch": {
+   "src": "assets/cat/cat-stretch.png",
+   "x": 335,
+   "y": 425,
+   "fw": 53,
+   "fh": 43,
+   "frames": 8,
+   "fps": 6,
+   "loop": false,
+   "sort": 35,
+   "note": "cat stretching"
+  },
+  "cat-look": {
+   "src": "assets/cat/cat-look.png",
+   "x": 334,
+   "y": 419,
+   "fw": 38,
+   "fh": 39,
+   "frames": 5,
+   "fps": 1,
+   "loop": false,
+   "sort": 35,
+   "note": "5 head directions; frame chosen by pointer position"
+  },
+  "steam-desk": {
+   "src": "assets/effects/steam-desk.png",
+   "x": 471,
+   "y": 281,
+   "fw": 15,
+   "fh": 26,
+   "frames": 8,
+   "fps": 7,
+   "loop": true,
+   "sort": 27,
+   "note": "coffee steam"
+  },
+  "steam-machine": {
+   "src": "assets/effects/steam-machine.png",
+   "x": 666,
+   "y": 345,
+   "fw": 15,
+   "fh": 26,
+   "frames": 8,
+   "fps": 7,
+   "loop": true,
+   "sort": 21,
+   "note": "coffee steam"
+  },
+  "dust": {
+   "src": "assets/effects/dust-sheet.png",
+   "x": 150,
+   "y": 150,
+   "fw": 220,
+   "fh": 180,
+   "frames": 10,
+   "fps": 5,
+   "loop": true,
+   "sort": 40,
+   "note": "dust motes drifting in the lamp light"
+  }
+ },
+ "quads": {
+  "monitor-main-screen": {
+   "kind": "screen",
+   "sort": 25,
+   "points": [
+    [
+     485,
+     243
+    ],
+    [
+     552,
+     276
+    ],
+    [
+     552,
+     316
+    ],
+    [
+     485,
+     282
+    ]
+   ]
+  },
+  "monitor-side-screen": {
+   "kind": "screen",
+   "sort": 25,
+   "points": [
+    [
+     560,
+     293
+    ],
+    [
+     602,
+     314
+    ],
+    [
+     602,
+     342
+    ],
+    [
+     560,
+     321
+    ]
+   ]
+  },
+  "laptop-screen": {
+   "kind": "screen",
+   "sort": 26,
+   "points": [
+    [
+     575,
+     317
+    ],
+    [
+     605,
+     332
+    ],
+    [
+     605,
+     353
+    ],
+    [
+     575,
+     338
+    ]
+   ]
+  },
+  "window-glass": {
+   "kind": "window",
+   "sort": 3,
+   "points": [
+    [
+     635,
+     195
+    ],
+    [
+     744,
+     249
+    ],
+    [
+     744,
+     339
+    ],
+    [
+     635,
+     284
+    ]
+   ]
+  }
+ }
+}
